@@ -13,12 +13,6 @@ class Application : Application() {
         super.onCreate()
         val config = TwitterConfig.Builder(this)
             .logger(DefaultLogger(Log.DEBUG))
-            .twitterAuthConfig(
-                TwitterAuthConfig(
-                    "F6HZTisYRr3z2RRlAZU66c9BV",
-                    "KpGDSJz7qsuMU3ask5PjGi97bUGIXauXxL4AnVdPpOVMESTQ14"
-                )
-            )
             .debug(true)
             .build()
         Twitter.initialize(config)
